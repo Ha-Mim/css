@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+<title>CSS BOX Model</title>
+<style>
+    #main {
+        -boxsizing: border-box;
+        background-color: #9F6;
+        padding: 10px;
+        border: 5px #F00 solid;
+        position : relative;
+        top : 30px;
+        left :30px;
+  
+    }
+    #div {
+        -boxsizing: border-box;
+        background-color: yellow;
+        padding: 10px;
+        margin: 8px;
+        border: 5px blue solid;
+        position: actual;
+        top: 30px;
+        left: 30px;
+    }
+    span.span1 {
+        -boxsizing: border-box;
+        background-color: green;
+        padding: 10px;
+        margin: 0px;
+        border: 5px skyblue solid;
+        width: 100px;
+        position: actual;
+        top: 30px;
+        left: 30px;
+    }
+    span.span2 {
+        -boxsizing: border-box;
+        background-color: violet;
+        padding: 10px;
+        margin: 10px;
+        border: 5px white solid;
+        width: 100px;
+        position: relative;
+        top: 30px;
+        left: 30px;
+    }
+</style>
+</head>
+
+<body>
+<br />
+<div id ="main">
+Content goes here
+</div>
+<br />
+    <div id="div">
+        Hello how are you?
+        <span class="span1">
+            Context for inline element
+        </span> <span class="span2">
+            Context for inline element
+        </span>Fine Thank you.
+    </div>
+</body>
+</html>
